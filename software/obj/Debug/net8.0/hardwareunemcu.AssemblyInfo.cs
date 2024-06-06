@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hardwareunemcu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca2722b13a3c9a6e3905f1f5c323293f128df36b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3309154323d3b2675913e04a34ca0d68c29c954")]
 [assembly: System.Reflection.AssemblyProductAttribute("hardwareunemcu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hardwareunemcu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

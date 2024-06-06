@@ -10,6 +10,7 @@ internal class Program
         Console.ResetColor();
         Console.WriteLine("Loading..");
         Thread.Sleep(2000);
+        Console.Title = "Hardware u Němců : Loading devices..";
         Console.WriteLine("Devices detected: ");
 
         Console.Write(" Motherboard Ultra Pro Plus+");
@@ -91,6 +92,7 @@ internal class Program
 
         Thread.Sleep(500);
 
+        Console.Title = "Hardware u Němců : Establishing connection..";
         Console.WriteLine("Establishing connection..");
 
         int y = Console.GetCursorPosition().Top;
@@ -109,6 +111,8 @@ internal class Program
             Thread.Sleep(5 + rng.Next(-4, 250));
         }
 
+        string device = RandomHex();
+        Console.Title = "Hardware u Němců : Connected to " + device;
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\nCONNECTED");
 
@@ -121,6 +125,7 @@ internal class Program
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("DISCONNECTED");
+        Console.Title = "Hardware u Němců : Disconnected from " + device;
     }
 
     public static string RandomHex(int length = 16)
