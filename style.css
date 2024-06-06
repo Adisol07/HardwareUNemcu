@@ -2,7 +2,8 @@
 
 :root {
     --footerHeight: 40px;
-    --headerHeight: 80px;
+    --headerHeight: 40px;
+    --gradient: linear-gradient(to left, purple, mediumpurple);
 }
 
 * {
@@ -13,10 +14,11 @@
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-color: #040404;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -45,11 +47,31 @@ button {
     height: 42px;
     font-size: 18px;
     cursor: pointer;
+    transition-duration: 1s;
+}
+
+button:hover {
+    border-color: mediumpurple;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.gradientBackground {
+    padding: 8px;
+    background: var(--gradient);
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.gradientText {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer {
     height: var(--footerHeight);
-    background-color: #040404;
+    background-color: rgb(17, 17, 17);
     padding: 15px;
 
     p {
@@ -61,15 +83,15 @@ footer {
 header {
     height: var(--headerHeight);
     top: calc(var(--headerHeight) - 15px);
-    background-color: #040404;
+    background-color: rgb(17, 17, 17);
     padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     img {
-        width: 64px;
-        height: 64px;
+        width: 52px;
+        height: 52px;
         align-self: center;
         border-radius: 20px;
     }
@@ -77,6 +99,12 @@ header {
     h1 {
         align-self: center;
         margin-left: 15px;
+        opacity: 0.8;
+        transition-duration: 1s;
+    }
+
+    h1:hover {
+        opacity: 1;
     }
 
     a,
@@ -94,15 +122,220 @@ main {
 }
 
 #view {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     img {
-        width: 700px;
-        height: 700px;
-        margin: 50px;
+        animation: 1s ease-out 0s 1 SlideUpFromDown;
+        width: 50vw;
+        height: 25vw;
     }
 
     .viewTitle {
-        background: linear-gradient(to left, purple, mediumpurple);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        animation: 1s ease-out 0s 1 SlideUpFromDown;
+        margin-bottom: 3rem;
+        font-size: 85px;
+    }
+}
+
+#about {
+    .aboutTitle {
+        font-size: 60px;
+        max-width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    img {
+        width: 980px;
+        height: 980px;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        margin: 8px;
+    }
+    a {
+        text-decoration-color: mediumpurple;
+        text-decoration-style: dashed;
+    }
+    a:hover {
+        text-decoration-style: solid;
+    }
+}
+
+#product {
+    .productTitle {
+        font-size: 60px;
+        max-width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        margin: 8px;
+        margin-left: 20px;
+    }
+
+    p {
+        margin: 8px;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+
+    tag {
+        padding: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        background: var(--gradient);
+        border-radius: 8px;
+        background-size: cover;
+        margin-right: 8px;
+        display: flex;
+        flex-direction: row;
+        filter: brightness(1.8);
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    img {
+        margin: 20px;
+    }
+
+    .tags {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@keyframes SlideUpFromDown {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        h1 {
+            font-size: 21px;
+        }
+
+        img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    #view {
+        .viewTitle {
+            font-size: 48px;
+            text-shadow: -0.1px 0 white, 0 0.1px white, 0.1px 0 white, 0 -0.1px white;
+            padding: 8px;
+            background: var(--gradient);
+            border-radius: 8px;
+            background-size: cover;
+        }
+
+        background-image: url("./istockphoto-1467937769-170667a.webp");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        img {
+            visibility: hidden;
+        }
+    }
+
+    #about {
+        background-image: url("IMG_2926.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        img {
+            display: none;
+        }
+
+        h1 {
+            margin: auto;
+        }
+
+        p {
+            padding: 8px;
+            background: var(--gradient);
+            border-radius: 8px;
+            background-size: cover;
+        }
+    }
+
+    #product {
+        background-image: url("3142ED66-D442-4822-896C-585A4E23249B_1_105_c.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        img {
+            display: none;
+        }
+
+        .productTitle {
+            font-size: 24px;
+            margin: auto;
+            margin-left: 4px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            width: fit-content;
+        }
+
+        tag {
+            font-size: 12px;
+        }
+        .tags {
+            justify-content: center;
+        }
+
+        h2 {
+            visibility: hidden;
+        }
+        p {
+            margin: auto;
+            margin-bottom: 4px;
+            margin-left: 4px;
+            margin-right: 4px;
+            font-size: 18px;
+            overflow-wrap: break-word;
+            padding: 8px;
+            background: var(--gradient);
+            border-radius: 8px;
+            background-size: cover;
+        }
+        button {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
