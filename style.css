@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --footerHeight: 40px;
+    --footerHeight: 44px;
     --headerHeight: 40px;
     --gradient: linear-gradient(to left, purple, mediumpurple);
 }
@@ -73,10 +73,21 @@ footer {
     height: var(--footerHeight);
     background-color: rgb(17, 17, 17);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     p {
         text-align: center;
         font-size: 21px;
+    }
+    a {
+        text-decoration-color: mediumpurple;
+        text-decoration-style: dashed;
+    }
+    a:hover {
+        text-decoration-style: solid;
     }
 }
 
