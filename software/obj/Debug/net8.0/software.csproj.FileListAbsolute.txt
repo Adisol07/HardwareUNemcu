@@ -1,0 +1,15 @@
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/bin/Debug/net8.0/software
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/bin/Debug/net8.0/software.deps.json
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/bin/Debug/net8.0/software.runtimeconfig.json
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/bin/Debug/net8.0/software.dll
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/bin/Debug/net8.0/software.pdb
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.AssemblyInfoInputs.cache
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.AssemblyInfo.cs
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.csproj.CoreCompileInputs.cache
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.sourcelink.json
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.dll
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/refint/software.dll
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.pdb
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/software.genruntimeconfig.cache
+/Users/adisol/Documents/Projects/HardwareUNemcu/software/obj/Debug/net8.0/ref/software.dll
