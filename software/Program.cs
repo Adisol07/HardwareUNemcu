@@ -85,7 +85,7 @@ internal class Program
 
         Thread.Sleep(100);
 
-        Console.Write("     AirCompute Regular SoundCard NOTHING SPECIAL");
+        Console.Write("     AirCompute Regular SoundCard NEVER GONNA GIVE YOU UP");
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine(" (" + RandomHex() + ")");
         Console.ResetColor();
